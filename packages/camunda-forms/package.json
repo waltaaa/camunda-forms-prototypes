@@ -1,0 +1,26 @@
+{
+  "name": "camunda-forms",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "dev": "rollup -c --watch"
+  },
+  "keywords": [],
+  "author": "Maciej Barelkowski <maciej.barelkowski@camunda.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "rollup": "^2.33.2"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^3.17.4",
+    "moment": "^2.29.1",
+    "q": "^1.5.1",
+    "superagent": "^6.1.0"
+  }
+}
