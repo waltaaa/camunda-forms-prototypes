@@ -1,4 +1,7 @@
 import { Client as CamundaClient } from '../vendor/camunda-bpm-sdk-js/lib/index-browser';
+import { Formio } from 'formiojs';
+import FORM from './form';
+
 
 export class CamundaForms {
   constructor({ apiUri } = {}) {
@@ -8,10 +11,6 @@ export class CamundaForms {
 
     this.client = new CamundaClient({ apiUri });
     this.taskService = new this.client.resource('task');
-  }
-
-  renderForm() {
-
   }
 
   /**
@@ -28,6 +27,7 @@ export class CamundaForms {
     const task = await this.taskService.get(taskId);
 
     debugger;
+    const rendered = await Formio.createForm(node, FORM);
   }
 }
 

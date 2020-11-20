@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "fast-xml-parser": "^3.17.4",
+    "formiojs": "^4.12.1",
     "moment": "^2.29.1",
     "q": "^1.5.1",
     "superagent": "^6.1.0"
